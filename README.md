@@ -1,9 +1,10 @@
-== README
+README
+==
+___
+[Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html) in progress
 
-***
-In progress
 Chapter in tutorial: 5.7
-***
+___
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
