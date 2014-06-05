@@ -1,8 +1,8 @@
 #README
-___
+
 [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html) in progress
 
-Chapter in tutorial: 5.9
+Chapter in tutorial: 5.10
 ___
 
 This README would normally document whatever steps are necessary to get the
