@@ -2,17 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
-background-color: #222222;
+html, body{
+  background-color: #111111;
+  height: 100%;
 }
 
-#page{
-height:95%;
+a{
+color: #A5B838;
+}
+
+.navbar-header{
+ background-color: #38173A;
+ height: 25px;
+}
+
+.container{
+  padding-top: 5px;
+  min-height:100%;
+  height: auto;
+  height: 100%;
+  margin-bottom: -29px;
 }
 
 footer{
 
-padding-top: 25px;
+  clear:both;
+  height:29px;
 
 }
 
