@@ -2,13 +2,31 @@
 <html>
 <head>
   <title>MyPage</title>
+  <link rel="stylesheet" href:"//railsgirls.com/assets/bootstrap.css" />
+  <link rel="stylesheet" href:"//railsgirls.com/assets/bootstrap-theme.css" />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Main page</a>
+        <a class="navbar-brand" href="/posts">Posts</a>
+      </div>
+    </div>
+  </nav>
 
+  <div class="container" id="page">
+    <%= yield %>
+  </div>
+
+  <footer class="navbar navbar-bottom">
+    <div class="container-fluid">
+      Agnieszka Czerwinska
+    </div>
+  </footer>
 </body>
 </html>
