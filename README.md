@@ -25,4 +25,9 @@ In progress
  
 * gem 'spring'
 
+BOOTSTRAP:
+
+* gem 'bootstrap-sass', '~> 3.1.1'
+* gem 'bootstrap-form'
+
 
