@@ -12,6 +12,14 @@ a{
   text-decoration: none;
 }
 
+.container{
+  padding-top: 5px;
+  min-height:100%;
+  height: auto;
+  height: 100%;
+  margin-bottom: -29px;
+}
+
 .navbar-header{
   padding-left: 10px;
   margin-left: -10px;
@@ -19,15 +27,6 @@ a{
   background: linear-gradient(#220B23, #38173A);
   height: 35px;
   width: 101%;
-}
-
-.container{
-  border-radius: 5px;
-  padding-top: 5px;
-  min-height:100%;
-  height: auto;
-  height: 100%;
-  margin-bottom: -29px;
 }
 
 footer{
