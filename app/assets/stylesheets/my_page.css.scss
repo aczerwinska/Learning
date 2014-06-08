@@ -3,17 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 html, body{
-  background-color: #111111;
+  background-color: #090909;
   height: 100%;
 }
 
 a{
-color: #A5B838;
-}
-
-.navbar-header{
- background-color: #38173A;
- height: 25px;
+  color: #A5B838;
+  text-decoration: none;
 }
 
 .container{
@@ -24,10 +20,17 @@ color: #A5B838;
   margin-bottom: -29px;
 }
 
+.navbar-header{
+  padding-left: 10px;
+  margin-left: -10px;
+  padding-top: 15px;
+  background: linear-gradient(#220B23, #38173A);
+  height: 35px;
+  width: 101%;
+}
+
 footer{
-
-  clear:both;
-  height:29px;
-
+  clear: both;
+  height: 29px;
 }
 
