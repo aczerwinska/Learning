@@ -7,9 +7,23 @@ html, body{
   height: 100%;
 }
 
+#page{
+ width: 99%;
+ background-color: grey;
+}
+
 a{
   color: #A5B838;
   text-decoration: none;
+  padding: 2px;
+}
+
+.navbar-brand{
+  border-color: #A5B838;
+  border-right-style: solid;
+  border-size: 1px;
+  padding: 0px 5px;
+  
 }
 
 .container{
@@ -21,15 +35,16 @@ a{
 }
 
 .navbar-header{
-  padding-left: 10px;
-  margin-left: -10px;
   padding-top: 15px;
   background: linear-gradient(#220B23, #38173A);
   height: 35px;
-  width: 101%;
+  width: 99%;
 }
 
 footer{
+  background: linear-gradient(#220B23, #38173A);
+  padding-top: 5px;
+  width: 99%;
   clear: both;
   height: 29px;
 }
