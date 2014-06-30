@@ -41,3 +41,6 @@ gem 'spring',        group: :development
 #Bootstrap
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'bootstrap-form'
+
+#Devise
+gem 'devise'
