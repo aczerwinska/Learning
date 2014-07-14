@@ -44,3 +44,6 @@ gem 'bootstrap-form'
 
 #Devise
 gem 'devise'
+
+#CanCan
+gem 'cancan'
