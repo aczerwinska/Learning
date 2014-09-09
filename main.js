@@ -27,9 +27,6 @@ function save(){
 
     var save = {
         scraps: scraps,
-    };
-
-    var save2 = {
         ScrapBots: ScrapBots,
         ScrapBotCost: ScrapBotCost,
     };
@@ -42,5 +39,9 @@ function load(){
     if (typeof savegame.scraps !== "undefined") scraps = savegame.scraps;
     if (typeof savegame.ScrapBots !== "undefined") ScrapBots = savegame.ScrapBots;
     if (typeof savegame.ScrapBotCost !== "undefined") ScrapBotCost = savegame.ScrapBotCost;
+
+   document.getElementById('ScrapBots').innerHTML = ScrapBots;  
+   document.getElementById('scraps').innerHTML = scraps;
+   document.getElementById('ScrapBotCost').innerHTML = ScrapBotCos;
 
 };
