@@ -22,3 +22,25 @@ function buyScrapBot(){
 window.setInterval(function(){
 	scrapClick(ScrapBots);
 }, 1000);
+
+function save(){
+
+    var save = {
+        scraps: scraps,
+    };
+
+    var save2 = {
+        ScrapBots: ScrapBots,
+        ScrapBotCost: ScrapBotCost,
+    };
+
+    localStorage.setItem("save",JSON.stringify(save)); 
+};
+
+function load(){
+    var savegame = JSON.parse(localStorage.getItem("save")); 
+    if (typeof savegame.scraps !== "undefined") scraps = savegame.scraps;
+    if (typeof savegame.ScrapBots !== "undefined") ScrapBots = savegame.ScrapBots;
+    if (typeof savegame.ScrapBotCost !== "undefined") ScrapBotCost = savegame.ScrapBotCost;
+
+};
