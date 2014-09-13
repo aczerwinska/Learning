@@ -10,36 +10,37 @@
 		<p>Incremental Game by Agauke</p>
 		
 		<div class="Menu">
-			<table><td>
+			<table><tr>
 				<th><button onClick="save()">Save</button></th>
 				<th><button onClick="load()">Load</button></th>
 				<th><button onClick="deleteSave()">Delete your save</button></th>
-			</td></table>
+			</tr></table>
 		</div>
 
+		</br>
+
 		<table>
-		<td>
-			<th>
-				<div class="Materials">
+			<tr>
+				<th>Materials</th>
+				<th>Robots</th>
+			</tr>
 
-					<p>Materials</p>
-		
-					<button onClick="scrapClick(1)">Scrap metal</button>
-					<span id="scraps">0</span>
-				</div>
-			</th>
+			<!-- Scrap and Scrap Bots -->
 
-			<th>
-				<div class="Robots">
-					<p>Robots</p>
+			<tr>
+				<td>
+						<button onClick="scrapClick(1)">Scrap metal</button></br>
+						<span id="scraps">0</span>
+				</td>
 
-					<button onClick="buyScrapBot()">Buy ScrapBot</button>
-					ScrapBots: <span id="ScrapBots">0</span>
-					Cost: <span id="ScrapBotCost">10</span>
+				<td>
+						<button onClick="buyScrapBot()">Buy ScrapBot</button></br>
+						ScrapBots: <span id="ScrapBots">0</span>
+						Cost: <span id="ScrapBotCost">10</span>
+				</td>
+			</tr>
 
-				</div>
-			</th>
-		</td>
+
 		</table>
 
 		<script type="text/javascript" src="main.js"></script>
