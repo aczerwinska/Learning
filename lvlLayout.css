@@ -1,0 +1,40 @@
+#frame {
+	border-style: double;
+	border-color: rgba(200,200,200,0.5);
+	border-radius: 10px;
+	background-color: rgba(240,240,240,0.3);
+	padding: 10px;
+	margin: 10px;
+}
+
+#image{
+	border-radius: 100%;
+	border-width: 10px;
+	border-style: solid;
+	border-color: white;
+	color: white;
+	width: 100px;
+	height: 135px;
+	font-size: 50px;
+	font-style: italic;
+	text-align: center;
+}
+
+td{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#progressbar{
+	width: 200px;
+	height: 20px;
+}
+
+ .ui-progressbar.ui-widget-content {
+     background: url(images/white-40x100.png) rgba(0,0,0,0.2) repeat-x 50% 50%;
+  }
+
+  .ui-progressbar.ui-widget-header {
+     color: Blue;
+     background: url(images/lime-1x100.png) #cccccc repeat-x 50% 50%;
+  }
