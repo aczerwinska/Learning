@@ -1,0 +1,12 @@
+body {
+	background-image: url(http://p1.pichost.me/i/31/1546253.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#body {
+	background: linear-gradient(rgba(150,150,150,0.3), rgba(50,50,50,0.3));
+	margin: 20px;
+	padding: 20px;
+	border-radius: 5px;
+};
