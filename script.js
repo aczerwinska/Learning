@@ -1,6 +1,8 @@
+var level = '0';
+
 $(document).ready(function(){
 
-	$('#image').append('0');
+	$('#image').append(level);
 
 });
 
