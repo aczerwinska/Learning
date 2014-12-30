@@ -15,6 +15,11 @@ $(function() {
     
     
 $("#but").click(function() {
+
+        $( "#progressbar" ).progressbar({
+            max: max
+        });
+
         currValue = $( "#progressbar" ).data("value");
         currValue = parseInt(currValue) ? parseInt(currValue) : 0;
         if(currValue <= max-1) {
@@ -26,8 +31,8 @@ $("#but").click(function() {
             level += 1;
             max = parseInt(max*1.2);
             $( "#progressbar" ).progressbar({
-              value: 1
-            }).data("value",1);
+              value: 0
+            }).data("value",0);
             console.log('next lvl. Level: ' + level + ' Max: ' + max + ' CurrValue: ' + currValue);
             $("#exper").html("0 exp");
             $('#image').html(level);
