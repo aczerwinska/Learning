@@ -1,20 +1,26 @@
 var level = 0;
 var max = 10;
-$(document).ready(function(){
-
-	$('#image').append(level);
-    $('#maks').append(max);
-
-});
 
 $(function() {
+
+    $('#image').append(level);
+    $('#maks').append(max);
     $( "#progressbar" ).progressbar({
       value: 0
     })
     .data("value","0");
+
+    //Informations about buttons
+
+    $("#but").hover(function() {
+        $('#info').html('With an each step you will gain 1 point of experience.');
+    }, function(){
+        $('#info').empty();
+    });
+
+    //Progressbar
     
-    
-$("#but").click(function() {
+    $("#but").click(function() {
 
         $( "#progressbar" ).progressbar({
             max: max
@@ -29,7 +35,7 @@ $("#but").click(function() {
             $("#exper").html((currValue)+" exp");
         }else {
             level += 1;
-            max = parseInt(max*1.2);
+            max = parseInt(max*1.5);
             $( "#progressbar" ).progressbar({
               value: 0
             }).data("value",0);
