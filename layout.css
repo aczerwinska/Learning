@@ -70,8 +70,12 @@ td{
 	border-radius: 10px;
 	background-color: rgba(240,240,240,0.1);
 	width: 400px;
-	height: 250px;
+	height: 80px;
 	color: white;
 	padding: 5px;
 	vertical-align: top;
+}
+
+#logs{
+	height: 250px;
 }
