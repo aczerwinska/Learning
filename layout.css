@@ -1,3 +1,5 @@
+/* Main */
+
 body {
 	background-image: url(http://p1.pichost.me/i/31/1546253.jpg);
 	background-size: 100%;
@@ -9,9 +11,13 @@ body {
 	margin: 20px;
 	padding: 20px;
 	border-radius: 5px;
-};
+}
 
-#frame {
+/* FIRST TABLE */
+/* ----------- */
+
+/* Layout */
+#first {
 	border-style: double;
 	border-color: rgba(200,200,200,0.5);
 	border-radius: 10px;
@@ -20,6 +26,12 @@ body {
 	margin: 10px;
 }
 
+td{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Level */
 #image{
 	border-radius: 100%;
 	border-width: 10px;
@@ -33,10 +45,7 @@ body {
 	text-align: center;
 }
 
-td{
-	padding-left: 10px;
-	padding-right: 10px;
-}
+/* Progress */
 
 #progressbar{
 	width: 200px;
@@ -50,4 +59,19 @@ td{
 .ui-progressbar.ui-widget-header {
      color: Blue;
      background: url(images/lime-1x100.png) #cccccc repeat-x 50% 50%;
+}
+
+/* SECOND TABLE */
+/* ------------ */
+
+#infoBox{
+	border-style: double;
+	border-color: rgba(200,200,200,0.3);
+	border-radius: 10px;
+	background-color: rgba(240,240,240,0.1);
+	width: 400px;
+	height: 250px;
+	color: white;
+	padding: 5px;
+	vertical-align: top;
 }
