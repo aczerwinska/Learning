@@ -2,7 +2,7 @@ var level = 0;
 var max = 10;
 
 $(function() {
-
+    var current = 1;
     $('#image').append(level);
     $('#maks').append(max);
     $( '#progressbar').progressbar({
@@ -43,12 +43,16 @@ $(function() {
 
             //Time
             var d = new Date();
-            var time = '</br>' + d.toLocaleString() + ' - ';
+            var time = d.toLocaleString() + ' - ';
 
+            //Logs - text
             var levelUP = 'LEVEL UP to level:  ' + level;
 
             //Logs
-            $('#logs').prepend(time + levelUP);
+
+            $('#logs').append('<div><span id="date">' + time + '</span>' + levelUP + '</div>');
+            $('#logs div:lt(-8)').remove();
+           
         }
     });
 

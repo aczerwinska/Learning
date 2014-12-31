@@ -4,6 +4,7 @@ body {
 	background-image: url(http://p1.pichost.me/i/31/1546253.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 #body {
@@ -78,4 +79,8 @@ td{
 
 #logs{
 	height: 250px;
+}
+
+#date{
+	color: grey;
 }
