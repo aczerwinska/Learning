@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+		<title>Simple icremental Game by A.Czerwinska</title>
+	</head>
+	<body>
+
+		<p>Simple incremental Game by A.Czerwinska</p>
+		
+		<div class="Menu">
+			<table><tr>
+				<th><button onClick="save()">Save</button></th>
+				<th><button onClick="load()">Load</button></th>
+				<th><button onClick="deleteSave()">Delete your save</button></th>
+			</tr></table>
+		</div>
+
+		</br>
+
+		<table>
+			<tr>
+				<th>Materials</th>
+				<th>Robots</th>
+			</tr>
+
+			<!-- Scrap and Scrap Bots -->
+
+			<tr>
+				<td>
+						<button onClick="scrapClick(1)">Scrap metal</button></br>
+						<span id="scraps">0</span>
+						- <span id="ScrapsPerSec">0</span>/sec
+				</td>
+
+				<td>
+						<button onClick="buyScrapBot()">Buy ScrapBot</button></br>
+						ScrapBots: <span id="ScrapBots">0</span>
+						Cost: <span id="ScrapBotCost">10</span>
+				</td>
+			</tr>
+
+
+		</table>
+
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html> 
