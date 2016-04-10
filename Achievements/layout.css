@@ -1,0 +1,86 @@
+/* Main */
+
+body {
+	background-image: url(http://p1.pichost.me/i/31/1546253.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#body {
+	background: linear-gradient(rgba(150,150,150,0.3), rgba(50,50,50,0.3));
+	margin: 20px;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+/* FIRST TABLE */
+/* ----------- */
+
+/* Layout */
+#first {
+	border-style: double;
+	border-color: rgba(200,200,200,0.5);
+	border-radius: 10px;
+	background-color: rgba(240,240,240,0.3);
+	padding: 10px;
+	margin: 10px;
+}
+
+td{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Level */
+#image{
+	border-radius: 100%;
+	border-width: 10px;
+	border-style: solid;
+	border-color: white;
+	color: white;
+	width: 100px;
+	height: 135px;
+	font-size: 50px;
+	font-style: italic;
+	text-align: center;
+}
+
+/* Progress */
+
+#progressbar{
+	width: 200px;
+	height: 20px;
+}
+
+.ui-progressbar.ui-widget-content {
+     background: url(images/white-40x100.png) rgba(0,0,0,0.2) repeat-x 50% 50%;
+}
+
+.ui-progressbar.ui-widget-header {
+     color: Blue;
+     background: url(images/lime-1x100.png) #cccccc repeat-x 50% 50%;
+}
+
+/* SECOND TABLE */
+/* ------------ */
+
+#infoBox{
+	border-style: double;
+	border-color: rgba(200,200,200,0.3);
+	border-radius: 10px;
+	background-color: rgba(240,240,240,0.1);
+	width: 400px;
+	height: 80px;
+	color: white;
+	padding: 5px;
+	vertical-align: top;
+}
+
+#logs{
+	height: 250px;
+}
+
+#date{
+	color: grey;
+}
