@@ -1,0 +1,56 @@
+// Place all the styles related to the MyPage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body{
+  background-color: #090909;
+  height: 100%;
+}
+
+#page{
+ width: 98%;
+ background-color: grey;
+}
+
+a{
+  color: #A5B838;
+  text-decoration: none;
+  padding: 2px;
+}
+
+.navbar-brand{
+  border-color: #A5B838;
+  border-right-style: solid;
+  border-size: 1px;
+  padding: 0px 5px;
+  
+}
+
+.navbar-right{
+  float: right;
+  padding-right: 10px;
+}
+
+.container{
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+
+.navbar-header{
+  padding-top: 15px;
+  background: linear-gradient(#220B23, #38173A);
+  height: 35px;
+  width: 98%;
+  padding-left: 10px;
+}
+
+footer{
+  background: linear-gradient(#220B23, #38173A);
+  padding-top: 5px;
+  width: 98%;
+  padding-left: 10px;
+  height: 29px;
+  clear: both;
+}
+
