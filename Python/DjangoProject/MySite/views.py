@@ -1,24 +1,27 @@
 from django.shortcuts import get_object_or_404, render
-from django.http import HttpResponseRedirect, HttpResponse
+from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
-
+from django.views import generic
 from .models import Choice, Question
 
 
-def index(request):
-    latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    context = {'latest_question_list': latest_question_list}
-    return render(request, 'mysite/index.html', context)
+class IndexView(generic.ListView):
+    template_name = 'mysite/index.html'
+    context_object_name = 'latest_question_list'
+
+    def get_queryset(self):
+        """Return the last five published questions."""
+        return Question.objects.order_by('-pub_date')[:5]
 
 
-def detail(request, question_id):
-    question = get_object_or_404(Question, pk=question_id)
-    return render(request, 'mysite/detail.html', {'question': question})
+class DetailView(generic.DetailView):
+    model = Question
+    template_name = 'mysite/detail.html'
 
 
-def results(request, question_id):
-    question = get_object_or_404(Question, pk=question_id)
-    return render(request, 'mysite/results.html', {'question': question})
+class ResultsView(generic.DetailView):
+    model = Question
+    template_name = 'mysite/results.html'
 
 
 def vote(request, question_id):
