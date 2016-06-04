@@ -1,8 +1,11 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'MySite/style.css' %}" />
+<p id="menu">RANDOM QUESTION SITE   <a href="{% url 'mysite:index' %}"><h4>Home</h4></a></p>
 <h1>{{ question.question_text }}</h1>
 
 <ul>
 {% for choice in question.choice_set.all %}
-    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+    <li>{{ choice.choice_test }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
 {% endfor %}
 </ul>
 
