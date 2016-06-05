@@ -36,13 +36,13 @@ class HerbataList(ListView):
 class HerbataCreate(CreateView):
     model = Herbata
     success_url = reverse_lazy('herbata_list')
-    fields = ['name', 'product', 'date', 'shop']
+    fields = ['name', 'type', 'date', 'punkt']
 
 
 class HerbataUpdate(UpdateView):
     model = Herbata
     success_url = reverse_lazy('herbata_list')
-    fields = ['name', 'product', 'date', 'shop']
+    fields = ['name', 'type', 'date', 'punkt']
 
 
 class HerbataDelete(DeleteView):

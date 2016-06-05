@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <style>
+        html {background-image: url(http://thatbackpacker.com/wp-content/uploads/2012/05/DSCF69002.jpg);}
+        body {background-color: rgba(255, 255, 255, 0.33); margin: 20px; padding-top: 20px;; border-radius: 50px;}
+        h1   {text-align: center; text-decoration: none; color: white;}
+        a    {text-decoration: none; color:green;}
+        ul   {margin-left: 10%}
+        .new {text-align: center}
+    </style>
     <title>Punkty</title>
 </head>
 <body>
+    <header></header>
     <h1>Punkty | <a href="{% url "herbata_list" %}">Herbaty</a></h1>
     <ul>
         {% for punkt in object_list %}
@@ -15,7 +24,7 @@
         {% endfor %}
     </ul>
 
-    <a href="{% url "punkt_new" %}">Nowy punkt</a><br>
+    <a class="new" href="{% url "punkt_new" %}">Nowy punkt</a><br>
 
 </body>
 </html>

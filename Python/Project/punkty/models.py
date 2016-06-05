@@ -21,7 +21,7 @@ class Punkt(models.Model):
 
 class Herbata(models.Model):
     name = models.CharField(max_length=30)
-    product = models.CharField(max_length=50)
+    type = models.CharField(max_length=50)
     date = models.DateField(default=datetime.now, blank=True)
     punkt = models.ForeignKey(Punkt, on_delete=models.CASCADE)
 
