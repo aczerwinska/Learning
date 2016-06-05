@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirm Delete</title>
+     <style>
+        html {background-image: url(http://thatbackpacker.com/wp-content/uploads/2012/05/DSCF69002.jpg);}
+        body {background-color: rgba(255, 255, 255, 0.33); margin: 20px; border-radius: 50px; }
+        h1   {text-align: center; text-decoration: none; color: white;}
+        a    {text-decoration: none; color:green;}
+        ul   {margin-left: 10%}
+    </style>
+</head>
+<body>
+    <form method="post">{% csrf_token %}
+    Na pewno chcesz usunąć "{{ object }}" ?
+    <input type="submit" value="Submit" />
+    </form>
+    <form action="{%  url "herbata_list" %}">
+    <input type="submit" value="Anuluj">
+    </form>
+</body>
+</html>
