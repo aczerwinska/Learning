@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shops</title>
+</head>
+<body>
+    <h1>Shops | <a href="{% url "provider_list" %}">Dostawcy</a></h1>
+    <ul>
+        {% for shop in object_list %}
+        <li>{{ shop.name }} :
+        <a href="{%  url "shop_edit" shop.id %}">edytuj</a>
+        <a href="{%  url "shop_delete" shop.id %}">usuń</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url "shop_new" %}">Nowy sklep</a><br>
+
+</body>
+</html>

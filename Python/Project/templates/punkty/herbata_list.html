@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Herbaty</title>
+</head>
+<body>
+    <h1><a href="{% url "punkt_list" %}">Punkty</a> | Herbaty</h1>
+    <ul>
+        {% for herbata in object_list %}
+        <li>{{ herbata.name }}, w {{ herbata.punkt }} :
+        <a href="{%  url "herbata_edit" provider.id %}">edytuj</a>
+        <a href="{%  url "herbata_delete" provider.id %}">usuń</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url "herbata_new" %}">Nowa herbata</a><br>
+
+</body>
+</html>
